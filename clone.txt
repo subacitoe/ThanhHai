@@ -1,0 +1,66 @@
+<div class="content">
+            <div class="part-1">
+                <div class="infor">
+                    <span>LÀM SMART KEY Ô TÔ</span>
+                    <p>
+                        Smartkey hiện nay đã trở nên khá phổ biến với các xe hơi đời mới, được sử dụng trên rất nhiều xe
+                        của Toyota, Honda, Huyndai… Những chiếc SmartKey với những tính năng vô cùng tiện lợi hoàn toàn
+                        có thể thay thế được những chìa khóa với ổ xoay truyền thống.
+                    </p>
+                    <p>Nhận làm các loại SMART KEY của ô tô, với chất lượng cao và chi phí vô cùng hợp lí. Thanh Hải sẽ
+                        mang đến cho bạn những trải nghiệm tốt nhất với phương châm "uy tín là trên hết" - "khách hàng
+                        là số 1"
+                    </p>
+                    <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
+                        269</button> -->
+                    <button class="btn-contact" id="xem_them_smartkey">XEM THÊM</button>
+
+                </div>
+                <div class="img_infor">
+                    <img src="https://www.phutungxeoto.vn/Upload/news/189202115616_tinh-nang-chong-trom-cao.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="part-1">
+                <div class="img_infor">
+                    <img src="https://cdn.aarp.net/content/dam/aarp/auto/2021/11/1140-key-fob.jpg" alt="">
+                </div>
+                <div class="infor">
+                    <span>LÀM CHÌA KHÓA Ô TÔ</span>
+                    <p>
+                        Chìa khóa Ô TÔ ở những dòng xe cũ và các dòng xe mới đều được Hải sao chép thêm để mang lại cho
+                        người dùng sự tiện lợi.
+                    </p>
+                    <p>Nhận làm các loại chìa của ô tô, với chất lượng cao và chi phí vô cùng hợp lí. Thanh Hải sẽ mang
+                        đến cho bạn những trải nghiệm tốt nhất với phương châm "uy tín là trên hết" - "khách hàng là số
+                        1"
+                    </p>
+                    <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
+                        269</button> -->
+                    <button class="btn-contact" id="xemThemKeyOto">XEM THÊM</button>
+
+                </div>
+
+            </div>
+            <div class="part-1">
+                <div class="infor">
+                    <span>LÀM CHÌA KHÓA XE TẢI</span>
+                    <p>
+                        Đối với các bạn lái xe tải, việc làm thêm mốt chiếc chìa khóa xe tải dự phòng là đều hết sức cần
+                        thiết. Đề phòng trường hợp đánh mất hay bỏ quên đâu đó. Thanh Hải sẽ giúp bạn làm thêm 1 cái dự
+                        phòng chỉ trong vài phút.
+                    </p>
+                    <p>Nhận làm các loại chìa khóa của xe tải, với chất lượng cao và chi phí vô cùng hợp lí. Thanh Hải
+                        sẽ mang đến cho bạn những trải nghiệm tốt nhất với phương châm "uy tín là trên hết" - "khách
+                        hàng là số 1"
+                    </p>
+                    <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
+                        269</button> -->
+                    <button class="btn-contact" id="xemThemCKXT">XEM THÊM</button>
+                </div>
+                <div class="img_infor">
+                    <img src="https://ae01.alicdn.com/kf/HTB1P7ZrOFXXXXXYXXXXq6xXFXXXL/1-c-i-Xe-Truck-Thay-Th-Uncut-Key-Blade-Shell-Tr-ng-H-p-Fit.jpg_Q90.jpg_.webp"
+                        alt="" style="height: 86%;">
+                </div>
+            </div>
+        </div>

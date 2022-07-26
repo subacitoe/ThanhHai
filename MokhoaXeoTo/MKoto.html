@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="img/zyro-image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>LÀM CHÌA KHÓA XE Ô TÔ | Thanh Hải</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <div class="close-menu"><span class="close"><i class="fas fa-times"></i></span></div>
+            <div class="wrapper-side-bar">
+                <div class="nav-side-bar">
+                    <ul>
+                        <li><a href="../index.html">TRANG CHỦ</a></li>
+                        <li id="services_menu" onclick="myFunction()"><a >DỊCH VỤ &nbsp;
+                                <i class="fas fa-plus" style="color: white;"></i><i class="minus_icon"
+                                    style="color: white; display: none;" class="fas fa-minus"></i></a>
+                            <ul class="services_menu_item">
+                                <li onclick="services_1()"><a href="../SmartKey/smartKey.html">LÀM SMART KEY Ô TÔ</a>
+                                </li>
+                                <li onclick="services_2()"><a href="../OtoKey/OtoKey.html">LÀM CHÌA KHÓA Ô TÔ</a></li>
+                                <li onclick="services_3()"><a href="#">LÀM CHÌA KHÓA XE TẢI</a></li>
+                                <li onclick="services_4()"><a href="../MokhoaXeoTo/MKoto.html">MỞ KHÓA CỬA XE Ô TÔ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SỰ KIỆN</a></li>
+                        <li><a href="#">HỖ TRỢ</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="side-bar-icon" id="side-bar-button"><i class="fas fa-align-justify" style="color: white;"></i>
+            </div>
+            <div class="logo" onclick="location.href='../index.html'">
+                <img src="img/zyro-image.png" alt="">
+            </div>
+            <div>
+                <ul class="menu">
+                    <li><a href="../index.html">TRANG CHỦ</a></li>
+                    <li class="dropdown"><a href="">DỊCH VỤ</a><i class="fas fa-angle-down icon_animate"
+                            style="color: white; margin: 0 10px; font-size: 15px;"></i>
+
+                        <div class="menu_hover">
+                            <ul class="">
+                                <li onclick="services_1()"><a href="../SmartKey/smartKey.html">LÀM SMART KEY Ô TÔ</a>
+                                </li>
+                                <li onclick="services_2()"><a href="../OtoKey/OtoKey.html">LÀM CHÌA KHÓA Ô TÔ</a></li>
+                                <li onclick="services_3()"><a href="#">LÀM CHÌA KHÓA XE TẢI</a></li>
+                                <li onclick="services_4()"><a href="../MokhoaXeoTo/MKoto.html">MỞ KHÓA CỬA XE Ô TÔ</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">SỰ KIỆN</a></li>
+                    <li><a href="#">HỖ TRỢ</a></li>
+                    <li><a href="#">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="marque">
+            <marquee direction="left" id="moving-text-item" scrollamount="10">DỊCH VỤ LÀM SMART KEY, CHÌA KHÓA, Ô TÔ VÀ
+                XE TẢI<button class="btn-contact" onclick="location.href='tel:0764 188 269'"
+                    style="margin: 0px 10px; padding: 5px;">Liên hệ ngay<i class="fas fa-phone"
+                        style="margin: 0 10px;"></i></button></marquee>
+        </div>
+        <div class="show_case">
+
+            <!-- Swiper -->
+            <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/services-key-duplication.jpg" alt="" onclick="services_1()" style="cursor: pointer">
+                        <div class="centered">SMART KEY</div>
+                        
+                    </div>
+                    <div class="swiper-slide"><img  onclick="services_2()" style="cursor: pointer" src="img/323-3233340_photo-wallpaper-transport-key-car-car-key.jpg"
+                            alt="">
+                        <div class="centered">CHÌA KHÓA XE HƠI</div>
+                    </div>
+                    <div class="swiper-slide"  onclick="services_3()" style="cursor: pointer"><img
+                            src="https://media.istockphoto.com/photos/hand-putting-key-in-vehicle-door-picture-id175217642?k=20&m=175217642&s=612x612&w=0&h=s2pdU1COvHCSR9POM50ydr0xNdUb3nvu7DC-CaqarvI="
+                            alt="">
+                        <div class="centered">CHÌA KHÓA XE TẢI</div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
+
+        </div>
+        <div class="services">
+            <span class="banner">MỞ KHÓA XE Ô TÔ</span>
+            <div>
+                <img src="img/line.png" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="part-1">
+                <div class="infor">
+                    <span>MỞ KHÓA XE Ô TÔ</span>
+                    <p>
+                        Nhận mở khóa các loại xe ô tô, xe tải ở khu vưc TP. Hồ Chí Minh!
+
+                    </p>
+                    <p>Đảm bảo không thiệt hại gì về xe của quý khách. Mọi thông tin thắc mắc, xin vui lòng liên hệ với Thanh Hải.
+                        Bạn sẽ nhận được phản hồi sớm nhất từ 5 - 10 phút. Chân thành cảm ơn vì đã sử dụng dịch vụ này.
+
+                    </p>
+                    <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
+                    269</button> -->
+                    <button class="btn-contact" id="mokhoaoto">XEM THÊM</button>
+
+                </div>
+                <div class="img_infor">
+                    <img src="https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/nguyenthanhha/032022/11/08/in_article/vietnams-car-sales-drop-for-second-consecutive-month.jpg?rt=20220311083516" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="something">
+            <div class="camket">
+                <div class="camket_1">
+                    <h2>TẠI SAO NÊN CHỌN DỊCH VỤ CỦA THANH HẢI</h2>
+                    <p><i class="fas fa-check-circle"></i>Kinh nghiệm lâu năm.</p>
+                    <p><i class="fas fa-check-circle"></i>Chất lượng dẫn đầu.</p>
+                    <p><i class="fas fa-check-circle"></i>Giá cả hợp lí.</p>
+                    <p><i class="fas fa-check-circle"></i>Uy tín 100%.</p>
+                    <p><i class="fas fa-check-circle"></i>Tốc độ nhanh chóng.</p>
+                    <p><i class="fas fa-check-circle"></i>Hỗ trợ phản hồi chỉ vài phút.</p>
+                    <p><i class="fas fa-check-circle"></i>Khu vực tỉnh lân cận TP.HCM.</p>
+                    <p><i class="fas fa-check-circle"></i>Đánh giá 4 - 5 <i class="fas fa-star"></i> từ khách hàng.</p>
+                </div>
+
+                <div class="camket_2">
+                    <img src="https://www.natautocoverage.com/wp-content/uploads/2020/11/mechanic.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="something">
+            <div class="camket"></div>
+            
+        </div> -->
+        <footer>
+            <div class="footer-wrap">
+                <div class="fter-1">
+                    <span class="copyright">&copy; SUBACITO © 2022. All rights reserved.</span>
+                    <span>Designed by SUBACITO</span>
+                </div>
+                <div class="fter-2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=620&amp;height=297&amp;hl=en&amp;q=67 18 Đ. Tân Thắng, Sơn Kỳ, Tân Phú, Thành phố Hồ Chí Minh&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">Friday Night Funkin
+                                Mods</a></div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                width: 100%;
+                                height: 297px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                width: 100%;
+                                height: 297px;
+                            }
+
+                            .gmap_iframe {
+                                height: 297px !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <div class="xem_them_1">
+            <div class="modal_content">
+                <div style="display: flex;">
+
+                    <div class="img_smartkey_oto" style="flex: 40%;">
+                        <img src="https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/nguyenthanhha/032022/11/08/in_article/vietnams-car-sales-drop-for-second-consecutive-month.jpg?rt=20220311083516" alt="">
+                        <div>
+                            <img style="width: 20%;height: 20%;"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
+                                alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
+                            <img style="width: 20%;height: 20%;"
+                                src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
+                                onclick="location.href='https:/zalo.me/0764188269'">
+                        </div>
+                    </div>
+                    <div style="flex: 60%">
+                        <span style="font-family: sans-serif; color: #ee4423; font-size: 20px; padding: 20px 0px;">MỞ KHÓA XE Ô TÔ</span>
+                        <div style="color: #ee4d2d"><span><u style="color:#ee4423; margin: 0px 5px;">4.5</u><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half"></i></span></div>
+                        <p style="padding: 10px 0px;" class="content-smk">
+                            Mở khóa xe ô tô, và các loại xe tải.
+                            Đảm bảo không thiệt hại gì về xe của quý khách. Mọi thông tin thắc mắc, xin vui lòng liên hệ với Thanh Hải. Bạn sẽ nhận được phản hồi sớm nhất từ 5 - 10 phút. Chân thành cảm ơn vì đã sử dụng dịch vụ này.
+                        </p>
+                        <div>
+                            <img src="https://www.cool-mania.vn/data/product/5f/37670c56e74e5153e1b8e668a050cf.gif"
+                                alt="" style="width: 80%;">
+                        </div>
+                       
+                        <button class="btn-contact" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <button type="button" class="scroll-to-top btn-position btnstyle"><img style="width: 50px;"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Circle-icons-key.svg/1200px-Circle-icons-key.svg.png"
+            alt=""></button>
+    <zalo class="zalo"><img src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
+            onclick="location.href='https:/zalo.me/0764188269'"></zalo>
+    <fb class="fb"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
+            alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'"></fb>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        const nav = document.querySelector("navigation");
+        const btnstyle = document.querySelector(".btnstyle");
+        btnstyle.addEventListener("click", function () {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        });
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 90) {
+                btnstyle.classList.add("active");
+            } else {
+                btnstyle.classList.remove("active");
+            }
+        });
+    </script>
+
+    <script>
+        $("#side-bar-button").click(function () {
+            $("#side-bar-button").css("opacity", "0");
+            $(".side-bar").addClass("enter");
+        })
+
+        $(".close").click(function () {
+            $(".side-bar").removeClass("enter");
+            $("#side-bar-button").css("opacity", "1");
+        }) 
+    </script>
+
+    <script>
+        function services_1() {
+            window.scrollTo({ top: 910, left: 0, behavior: "smooth" });
+            $(".side-bar").removeClass("enter");
+            $("#side-bar-button").css("opacity", "1");
+        }
+        function services_2() {
+            window.scrollTo({ top: 1700, left: 0, behavior: "smooth" });
+            $(".side-bar").removeClass("enter");
+            $("#side-bar-button").css("opacity", "1");
+        }
+        function services_3() {
+            window.scrollTo({ top: 2300, left: 0, behavior: "smooth" });
+            $(".side-bar").removeClass("enter");
+            $("#side-bar-button").css("opacity", "1");
+        }
+        $("#xem_them_smartkey").click(function () {
+            $(".xem_them_1").fadeIn();
+        })
+        $("#xemThemKeyOto").click(function () {
+            $(".xem_them_2").fadeIn();
+        })
+        $("#xemThemCKXT").click(function () {
+            $(".xem_them_3").fadeIn();
+        })
+       
+
+        function myFunction() {
+            var x = document.querySelector(".services_menu_item");
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+
+            } else {
+                x.style.display = "none";
+
+            }
+        }
+    </script>
+
+    <script>
+        var modal = document.querySelector(".xem_them_1");
+        var modal_2 = document.querySelector(".xem_them_2");
+        var modal_3 = document.querySelector(".xem_them_3");
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                $(".xem_them_1").fadeOut();
+            }
+            if (event.target == modal_2) {
+                $(".xem_them_2").fadeOut();
+            }
+            if (event.target == modal_3) {
+                $(".xem_them_3").fadeOut();
+            }
+        }
+
+    </script>
+</body>
+
+</html>
