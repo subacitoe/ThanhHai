@@ -178,17 +178,14 @@
         <div class="content">
             <div class="smart_key_product_wrapper">
                 <div class="smart_key_product_item">
-                    <div class="item-1 item_product">
+                    <div class="item-1 item_product" id="xemthem_list_smk_toyota">
                         <div class="img_item_smartKey">
                             <img src="SmartKey/img/smk-toyota.png" alt="">
                         </div>
                         <div>
                             Smart Key Xe Toyota
                         </div>
-
                         <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-
-
                     </div>
                     <div class="item-2 item_product">
                         <div class="img_item_smartKey">
@@ -712,6 +709,43 @@
             </div>
         </div>
 
+        <div class="xem_them_5">
+            <div class="modal_content">
+                <div style="display: flex;">
+
+                    <div class="img_smartkey_oto" style="flex: 40%;">
+                        <img src="https://static.carmudi.vn/wp-content/uploads/2022-08/VSGPZnXZzg_760_570.jpg"
+                            alt="">
+                        <div>
+                            <img style="width: 20%;height: 20%;"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
+                                alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
+                            <img style="width: 20%;height: 20%;"
+                                src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
+                                onclick="location.href='https:/zalo.me/0764188269'">
+                        </div>
+                    </div>
+                    <div style="flex: 60%">
+                        <span style="font-family: sans-serif; color: #ee4423; font-size: 20px; padding: 20px 0px;">SMART KEY OTO TOYOTA</span>
+                        <div style="color: #ee4d2d"><span><u style="color:#ee4423; margin: 0px 5px;">4.5</u><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half"></i></span></div>
+                        <p style="padding: 10px 0px;" class="content-smk" >
+                            Nhận làm chìa khoá tất cả các dòng, đời xe sử dụng khoá thông minh( start stop) xe lắp ráp cũng như xe nhập khẩu chính hãng như Toyota Camry, Toyota corolla altis, Toyota Vios, Toyota Yaris , Toyota Cross... Cài đặt chìa khoá bằng máy chuyên dụng khi làm thêm chìa, mất hết chìa khoá một cách nhanh chóng, không bị lỗi xe. Sử dụng chìa zin chính hãng và phôi chìa khoá theo máy, chìa khoá đc bảo hành 12 tháng. Liên hệ tư vấn: 0764 188 269. Mr : Hải
+                        </p>
+                        <div>
+                            <img src="https://www.cool-mania.vn/data/product/5f/37670c56e74e5153e1b8e668a050cf.gif"
+                                alt="" style="width: 80%;">
+                        </div>
+
+                        <button class="btn-contact" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
 
     </div>
     <mega class="megamen">
@@ -827,6 +861,10 @@
         $("#mokhoaoto").click(function () {
             $(".xem_them_4").fadeIn();
         })
+        $("#xemthem_list_smk_toyota").click(function () {
+            $(".xem_them_5").fadeIn();
+        })
+
 
         function myFunction() {
             var x = document.querySelector(".services_menu_item");
@@ -846,6 +884,7 @@
         var modal_2 = document.querySelector(".xem_them_2");
         var modal_3 = document.querySelector(".xem_them_3");
         var modal_4 = document.querySelector(".xem_them_4");
+        var modal_5 = document.querySelector(".xem_them_5");
         window.onclick = function (event) {
             if (event.target == modal) {
                 $(".xem_them_1").fadeOut();
@@ -858,6 +897,9 @@
             }
             if (event.target == modal_4) {
                 $(".xem_them_4").fadeOut();
+            }
+            if (event.target == modal_5) {
+                $(".xem_them_5").fadeOut();
             }
 
         }
