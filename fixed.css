@@ -554,7 +554,8 @@ footer {
 
 .xem_them_1,
 .xem_them_2,
-.xem_them_3 {
+.xem_them_3,
+.xem_them_5 {
     display: none;
     position: fixed;
     top: 0;
