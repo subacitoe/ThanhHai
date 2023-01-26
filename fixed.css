@@ -647,11 +647,8 @@ marquee {
 
 
 .smart_key_product_item {
-    display: flex;
     text-transform: uppercase;
     font-family: 'Anek Latin', sans-serif;
-    
-    
 }
 
 .item_product {
@@ -1003,18 +1000,30 @@ marquee {
 
 
 .smart_key_product_item {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     text-transform: uppercase;
     font-family: 'Anek Latin', sans-serif;
+    gap: 40px;
     
     
+}
+
+@media (max-width: 900px) {
+    .smart_key_product_item { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+    .smart_key_product_item { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+    .smart_key_product_item { grid-template-columns: repeat(1, 1fr); }
 }
 
 .item_product {
     text-align: center;
     margin: 5% 2%;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    flex: 25%;
+    /* flex: 25%; */
     padding: 10px;
     transition: 0.5s;
     cursor: pointer;
