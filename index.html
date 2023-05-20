@@ -5,912 +5,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LÀM CHÌA KHÓA XE Ô TÔ | Thanh Hải</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" type="x-icon" href="img/zyro-image.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fixed.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="google-site-verification" content="5aLIOVrHra8eKThUGUhcEoKymYelb2DxupUQE4nTPeE" />
-    <title>LÀM CHÌA KHÓA XE Ô TÔ | Thanh Hải</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="navigation">
-            <div class="side-bar-icon" id="side-bar-button"><i class="fas fa-align-justify" style="color: white;"></i>
+    <main>
+        <header>
+            <div class="Social-media">
+                <div class="link-icon default_margin">
+                    <i onclick="location.href='https://www.facebook.com/suakhoathanhhai/'" class="fa-brands fa-facebook" style="color: #525355;"></i>
+                </div>
+                <div class="content-header-news">Miễn phí vận chuyển trong TP.HCM và các tỉnh lân cận</div>
+                <div class="language default_margin">
+                    <img src="./img/vie-ico.png" alt="">
+                    <div><span>VN</span></div>
+                </div>
             </div>
-            <div class="logo" onclick="location.href='index.html'">
-                <img src="img/zyro-image.png" alt="">
-            </div>
-            <div>
-                <ul class="menu">
-                    <li><a href="index.html">TRANG CHỦ</a></li>
-                    <li class="dropdown">
-                        <div style="display: flex; justify-content: center; align-items: center;">
-                            <a href="#">DỊCH VỤ</a>
-                            <i class="fas fa-angle-down icon_animate"
-                                style="color: white; margin: 0 10px; font-size: 15px;">
-                            </i>
+            <nav class="default_margin">
+                <div class="logo" onclick="location.href='index.html'"><img
+                        src="./img/zyro-image.png" alt="">Thanh Hải</div>
+                <div class="Searching"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tìm kiếm"
+                        title="Type in a name">
+                    <div class="x-searching"><i class="fa-solid fa-x"></i></div>
+                </div>
+                <div class="infor">
+                    <div class="time"></div>
+                    <div>:</div>
+                    <div class="min"></div>
+                    <div>:</div>
+                    <div class="second"></div>
+                </div>
+                <div class="menu-nav-toggle default_margin">
+                    <div><a href="#" onclick="openNav()"><i class="fa-solid fa-bars fa-2xl x-toggle"></i></a></div>
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="menu-respon nav-mobile">
+                            <div class="Searching-nav-bar ">
+                                <input type="text" id="myInputNav" onkeyup="navFind()" placeholder="Tìm kiếm"
+                                title="Type in a name">
+                            </div>
                         </div>
-
-                        <div class="menu_hover">
-                            <ul class="">
-                                <li onclick="services_1()"><a>LÀM SMART KEY Ô TÔ</a></li>
-                                <li onclick="services_2()"><a>LÀM CHÌA KHÓA Ô TÔ</a></li>
-                                <li onclick="services_3()"><a>LÀM CHÌA KHÓA XE TẢI</a></li>
-                                <li onclick="services_4()"><a>MỞ KHÓA CỬA XE Ô TÔ</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">SỰ KIỆN</a></li>
-                    <li><a href="#">HỖ TRỢ</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-                    <li style="color: red; font-size: 15px;margin: 8px 10px;">
-                        <span style="font-weight: bolder; ">Hotline: </span>076 418 8269
-                    </li>
-                    <li><a>DARK MODE</a></li>
-                    <li class="dark-mode-btn">
-                        <div class="switch">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox" />
-                                <div class="slider round"></div>
-                            </label>
-                        </div>
-                    </li>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-nav">
+                <ul class="menu-nav-main">
+                    <li class="nav-main"><a href="./index.html">HOME</a></li>
+                    <li class="nav-main"><a href="tel:0764 188 269">CONTACT</a></li>
+                    <li class="nav-main"><a href="mailto:thanhhaisuakhoa@gmail.com">SUPPORT</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="side-bar">
-            <div class="close-menu"><span class="close"><i class="fas fa-times"></i></span></div>
-            <div class="wrapper-side-bar">
-
-                <div class="nav-side-bar">
-                    <ul>
-                        <li><a href="index.html">TRANG CHỦ</a></li>
-
-                        <li id="services_menu" onclick="myFunction()"><a>DỊCH VỤ &nbsp; <i class="fas fa-plus"
-                                    style="color: white;"></i><i class="minus_icon" style="color: white; display: none;"
-                                    class="fas fa-minus"></i></a>
-                            <ul class="services_menu_item">
-                                <li onclick="services_1()"><a>LÀM SMART KEY Ô TÔ</a></li>
-                                <li onclick="services_2()"><a>LÀM CHÌA KHÓA Ô TÔ</a></li>
-                                <li onclick="services_3()"><a>LÀM CHÌA KHÓA XE TẢI</a></li>
-                                <li onclick="services_4()"><a>MỞ KHÓA CỬA XE Ô TÔ</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">SỰ KIỆN</a></li>
-                        <li><a href="#">HỖ TRỢ</a></li>
-                        <li><a href="#">LIÊN HỆ</a></li>
-                        <li><a>DARK MODE</a></li>
-                        <li class="dark-mode-btn-mobile">
-                            <div class="switch">
-                                <label class="theme-switch" for="checkbox">
-                                    <input type="checkbox" id="checkbox" />
-                                    <div class="slider round"></div>
-                                </label>
-                            </div>
-                        </li>
-                        <li style="color: red; font-size: 15px;">
-                            <span style="font-weight: bolder;">Hotline: </span>076 418 8269
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <div class="marque">
-            <marquee direction="left" id="moving-text-item" scrollamount="10">DỊCH VỤ LÀM SMART KEY, CHÌA KHÓA, Ô TÔ VÀ
-                XE TẢI<button class="btn-contact" onclick="location.href='tel:0764 188 269'"
-                    style="margin: 0px 10px; padding: 5px;">Liên hệ ngay<i class="fas fa-phone"
-                        style="margin: 0 10px;"></i></button></marquee>
-        </div>
-        <div class="show_case">
-
+        </header>
+        <content>
             <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/—Pngtree—beautiful bright blue white yellow_1338572.jpg"
-                            alt="" onclick="services_1()" style="cursor: pointer">
-                        <div class="centered">SMART KEY</div>
-                        <div class="centered-img">
-                            <img src="https://chongcuopxemay.com/images/products/phukien/RemoteABC.png" alt="">
+            <div class="section">
+                <div class=" default_margin">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img
+                                    src="./img/slider-62050.jpg"
+                                    alt=""></div>
+                            <div class="swiper-slide"><img
+                                    src="./img/1.png"
+                                    alt=""></div>
+                            <div class="swiper-slide"><img
+                                    src="./img/2.png"
+                                    alt=""></div>
                         </div>
-
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-slide"><img onclick="services_2()" style="cursor: pointer"
-                            src="img/—Pngtree—colorful and rich yellow black_1338586.jpg" alt="">
-                        <div class="centered">CHÌA KHÓA XE HƠI</div>
-                        <div class="centered-img">
-                            <img src="./img/chia-oto.jpg"
-                                alt="">
+                </div>
+            </div>
+            <!-- Brand -->
+            <div class="section">
+                <div class="brand_container default_margin">
+                    <div class="brand_item">
+                        <div class="brand_item_wrapper">
+                            <div class="picture-item">
+                                <img src="http://thanhhaisuakhoa.com/upload/elfinder/kia%202.jpg" alt="">
+                            </div>
+                            <div class="text-item">
+                                <div class="title-item">
+                                    <h2>LÀM SMART KEY Ô TÔ</h2>
+                                </div>
+                                <div class="more-item">
+                                    Xem thêm
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide" onclick="services_3()" style="cursor: pointer">
-                        <img src="https://img.freepik.com/free-vector/flat-comic-style-background_52683-54433.jpg?w=2000"
-                            alt="">
-                        <div class="centered">CHÌA KHÓA XE TẢI</div>
-                        <div class="centered-img">
-                            <img src="img/transponder-key-shell-tp00mit-12p2-t00mit7pb-x-x.jpg" alt="">
+                    <div class="brand_item">
+                        <div class="brand_item_wrapper">
+                            <div class="picture-item">
+                                <img src="http://thanhhaisuakhoa.com/thumbs/260x260x1/upload/news/1574243050sua-khoa-oto-4008.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-item">
+                                <div class="title-item">
+                                    <h2>LÀM CHÌA Ô TÔ</h2>
+                                </div>
+                                <div class="more-item">
+                                    Xem thêm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand_item">
+                        <div class="brand_item_wrapper">
+                            <div class="picture-item">
+                                <img src="https://suakhoabaria.com/wp-content/uploads/2020/03/Lam_khoa_xe_Mazda_tai_nha-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-item">
+                                <div class="title-item">
+                                    <h2>LÀM CHÌA KHÓA XE TẢI</h2>
+                                </div>
+                                <div class="more-item">
+                                    Xem thêm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand_item special-brand">
+                        <div class="brand_item_wrapper">
+                            <div class="picture-item">
+                                <img src="https://thosuakhoa.com.vn/wp-content/uploads/2021/09/chia-khoa-da-nang-mo-moi-canh-cua-xe-oto-gia-re-1024x1024.jpg"
+                                    alt="">
+                            </div>
+                            <div class="text-item">
+                                <div class="title-item">
+                                    <h2>MỞ KHÓA CỬA XE Ô TÔ</h2>
+                                </div>
+                                <div class="more-item">
+                                    Xem thêm
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
+            <!-- List Product -->
+            <div class="section default_margin item-grid-product">
+                <div class="list_product_wrapper">
+                    <div class="CATEGORIES-product">
+                        <ul>
+                            <li onclick="filterSmartKey()"><a>SMART KEY</a></li>
+                            <li onclick="filterRemote()"><a>CHÌA KHÓA REMOTE</a></li>
+                        </ul>
+                    </div>
+                    <div class="Product-item">
+                        <div class="All"><span onclick="reload()">All <i class="fa-solid fa-arrows-rotate all_refresh"
+                                    style="color: #a1c247;"></i></span></div>
+                        <div class="Product-right">
+                            <div class="new-product list-Product-right" id="myUL" style="margin-left: 5px;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </content>
+
+        <div class="section default_margin">
 
         </div>
-        <div class="services">
-            <div><span style="padding: 30px; font-size: 20px;">Mr. Hai</span></div>
-            <span class="banner">DỊCH VỤ CỦA CHÚNG TÔI</span>
-            <div><span style="padding: 30px; font-size: 20px;">Chất lượng dẫn đầu</span></div>
-            <!-- <div>
-                <img src="img/line.png" alt="">
-            </div> -->
-        </div>
-
-        <div class="part-1 making-smk-oto">
-            <div class="infor">
-                <span>LÀM SMART KEY Ô TÔ</span>
-                <p>
-                    Smartkey hiện nay đã trở nên khá phổ biến với các xe hơi đời mới, được sử dụng trên rất nhiều xe
-                    của Toyota, Honda, Huyndai… Những chiếc SmartKey với những tính năng vô cùng tiện lợi hoàn toàn
-                    có thể thay thế được những chìa khóa với ổ xoay truyền thống.
-                </p>
-                <p>Nhận làm các loại SMART KEY của ô tô, với chất lượng cao và chi phí vô cùng hợp lí. Thanh Hải sẽ
-                    mang đến cho bạn những trải nghiệm tốt nhất với phương châm "uy tín là trên hết" - "khách hàng
-                    là số 1"
-                </p>
-                <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
-                    269</button> -->
-                <button class="btn-contact" id="xem_them_smartkey">XEM THÊM</button>
-
-            </div>
-            <div class="img_infor">
-                <img src="https://www.phutungxeoto.vn/Upload/news/189202115616_tinh-nang-chong-trom-cao.jpg" alt="">
-            </div>
-        </div>
-        <div class="content">
-            <div class="smart_key_product_wrapper">
-                <div class="smart_key_product_item">
-                    <div class="item-1 item_product" id="xemthem_list_smk_toyota">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-toyota.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Xe Toyota
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-2 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="https://cf.shopee.vn/file/04ca2d502229787ed74ed8415432a115" alt="">
-                        </div>
-                        <div>
-                            Smart Key Xe Kia
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-3 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-huyndai.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Xe Huyndai
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-4 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-ford.png" alt="">
-                        </div>
-                        <div>Smart Key Xe Ford</div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-1 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-mazda.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Mazda
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-2 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk.nissan.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Nissan
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-
-                    </div>
-                    <div class="item-3 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-mitsubishi.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Mitsubishi
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-4 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-suzuki.png" alt="">
-                        </div>
-                        <div>Smart Key Suzuki</div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-1 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-isuzu.png">
-                        </div>
-                        <div>
-                            Smart Key Xe Isuzu
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-2 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-chervolet.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Xe Chervolet
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-
-                    </div>
-                    <div class="item-3 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-bmw.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Xe BMW
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-4 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-mercedes.png" alt="">
-                        </div>
-                        <div>Smart Key Xe Mercedes</div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-1 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-audi.png">
-                        </div>
-                        <div>
-                            Smart Key Xe Audi
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-2 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-volkswagen.png" alt="">
-                        </div>
-                        <div>
-                            Smart Key Xe Volkswagen
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-3 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="SmartKey/img/smk-honda.png" alt="">
-                        </div>
-                        <div>
-                            Smart key Honda
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="content">
-            <div class="part-1 making-key-oto">
-
-                <div class="infor">
-                    <span>LÀM CHÌA KHÓA Ô TÔ</span>
-                    <p>
-                        Chìa khóa Ô TÔ ở những dòng xe cũ và các dòng xe mới đều được Hải sao chép thêm để mang lại cho
-                        người dùng sự tiện lợi.
-                    </p>
-                    <p>Nhận làm các loại chìa của ô tô, với chất lượng cao và chi phí vô cùng hợp lí. Thanh Hải sẽ mang
-                        đến cho bạn những trải nghiệm tốt nhất với phương châm "uy tín là trên hết" - "khách hàng là số
-                        1"
-                    </p>
-                    <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
-                        269</button> -->
-                    <button class="btn-contact" id="xemThemKeyOto">XEM THÊM</button>
-
-                </div>
-                <div class="img_infor">
-                    <img src="https://cdn.aarp.net/content/dam/aarp/auto/2021/11/1140-key-fob.jpg" alt="">
-                </div>
-
-            </div>
-            <div class="smart_key_product_wrapper">
-                <div class="smart_key_product_item">
-                    <div class="item-1 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-kia.png" alt="">
-                        </div>
-                        <div>
-                            chìa khóa remote KIA
-                        </div>
-
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-
-
-                    </div>
-                    <div class="item-2 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-toyota.png" alt="">
-                        </div>
-                        <div>
-                            chìa khóa remote toyota
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-3 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-mitsubishi.png" alt="">
-                        </div>
-                        <div>
-                            chìa khóa remote Mitsubishi
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-4 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-ford.png" alt="">
-                        </div>
-                        <div>chìa khóa remote Ford</div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-1 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-mazda.png" alt="">
-                        </div>
-                        <div>
-                            chìa khóa remote Mazda
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-2 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-nissan.png" alt="">
-                        </div>
-                        <div>
-                            chìa khóa remote Nissan
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-
-                    </div>
-                    <div class="item-3 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-suzuki.png" alt="">
-                        </div>
-                        <div>
-                            chìa khóa remote suzuki
-                        </div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                    <div class="item-4 item_product">
-                        <div class="img_item_smartKey">
-                            <img src="OtoKey/img/oto-key-isuzu.png" alt="">
-                        </div>
-                        <div>chìa khóa remote isuzu</div>
-                        <button class="btn-contact-2" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-                </div>
-
-                <!-- <div class="smart_key_product_item">
-                    
-                </div> -->
-
-
-            </div>
-        </div>
-        <div class="content">
-            <div class="part-1 making-key-truck-oto">
-                <div class="infor">
-                    <span>LÀM CHÌA KHÓA XE TẢI</span>
-                    <p>
-                        Đối với các bạn lái xe tải, việc làm thêm mốt chiếc chìa khóa xe tải dự phòng là đều hết sức cần
-                        thiết. Đề phòng trường hợp đánh mất hay bỏ quên đâu đó. Thanh Hải sẽ giúp bạn làm thêm 1 cái dự
-                        phòng chỉ trong vài phút.
-                    </p>
-                    <p>Nhận làm các loại chìa khóa của xe tải, với chất lượng cao và chi phí vô cùng hợp lí. Thanh Hải
-                        sẽ mang đến cho bạn những trải nghiệm tốt nhất với phương châm "uy tín là trên hết" - "khách
-                        hàng là số 1"
-                    </p>
-                    <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
-                        269</button> -->
-                    <button class="btn-contact" id="xemThemCKXT">XEM THÊM</button>
-                </div>
-                <div class="img_infor">
-                    <img src="https://ae01.alicdn.com/kf/HTB1P7ZrOFXXXXXYXXXXq6xXFXXXL/1-c-i-Xe-Truck-Thay-Th-Uncut-Key-Blade-Shell-Tr-ng-H-p-Fit.jpg_Q90.jpg_.webp"
-                        alt="" style="height: 86%;">
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="part-1 unlock-car-door">
-                <div class="infor">
-                    <span>MỞ KHÓA XE Ô TÔ</span>
-                    <p>
-                        Nhận mở khóa các loại xe ô tô, xe tải ở khu vưc TP. Hồ Chí Minh!
-
-                    </p>
-                    <p>Đảm bảo không thiệt hại gì về xe của quý khách. Mọi thông tin thắc mắc, xin vui lòng liên hệ với
-                        Thanh Hải.
-                        Bạn sẽ nhận được phản hồi sớm nhất từ 5 - 10 phút. Chân thành cảm ơn vì đã sử dụng dịch vụ này.
-
-                    </p>
-                    <!-- <button class="btn-contact" onclick="location.href='tel:0764 188 269'">Hotline liên hệ: 0764 188
-                    269</button> -->
-                    <button class="btn-contact" id="mokhoaoto">XEM THÊM</button>
-
-                </div>
-                <div class="img_infor">
-                    <img src="https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/nguyenthanhha/032022/11/08/in_article/vietnams-car-sales-drop-for-second-consecutive-month.jpg?rt=20220311083516"
-                        alt="">
-                </div>
-            </div>
-        </div>
-
-        <div class="something">
-            <div class="camket">
-                <div class="camket_1">
-                    <h2>TẠI SAO NÊN CHỌN DỊCH VỤ CỦA THANH HẢI</h2>
-                    <p><i class="fas fa-check-circle"></i>Kinh nghiệm lâu năm.</p>
-                    <p><i class="fas fa-check-circle"></i>Chất lượng dẫn đầu.</p>
-                    <p><i class="fas fa-check-circle"></i>Giá cả hợp lí.</p>
-                    <p><i class="fas fa-check-circle"></i>Uy tín 100%.</p>
-                    <p><i class="fas fa-check-circle"></i>Tốc độ nhanh chóng.</p>
-                    <p><i class="fas fa-check-circle"></i>Hỗ trợ phản hồi chỉ vài phút.</p>
-                    <p><i class="fas fa-check-circle"></i>Khu vực tỉnh lân cận TP.HCM.</p>
-                    <p><i class="fas fa-check-circle"></i>Đánh giá 4 - 5 <i class="fas fa-star"></i> từ khách hàng.</p>
-                </div>
-
-                <div class="camket_2">
-                    <img src="https://www.natautocoverage.com/wp-content/uploads/2020/11/mechanic.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="something">
-            <div class="camket"></div>
-            
-        </div> -->
         <footer>
-            <div class="footer-wrap">
-                <div class="fter-1">
-                    <span class="copyright">&copy; SUBACITO 2022. All rights reserved.</span>
-                    <span>Designed by SUBACITO</span>
+            <div class="footer-container">
+                <div class="left-footer">
+                    <div>© SUBACITO 2023. All rights reserved.
+                    </div>
+                    <div style="font-size: 15px; padding: 20px;">
+                        Designed by SUBACITO
+                    </div>
                 </div>
-                <div class="fter-2">
+                <div class="right-footer">
                     <div class="mapouter">
                         <div class="gmap_canvas">
-                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
-                                marginheight="0" marginwidth="0"
+                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
+                                marginwidth="0"
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3919.264208463507!2d106.602234!3d10.791065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c74ecfddc69%3A0x99ce5a2de1039c99!2zODQ1IFTDom4gS-G7syBUw6JuIFF1w70sIELDrG5oIEjGsG5nIEhvw6AgQSwgQsOsbmggVMOibiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2sus!4v1674722810593!5m2!1sen!2sus"></iframe><a
-                                href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">Friday Night Funkin
-                                Mods</a>
-                            </div>
-                        <style>
-                            .mapouter {
-                                position: relative;
-                                text-align: right;
-                                width: 100%;
-                                height: 297px;
-                            }
-
-                            .gmap_canvas {
-                                overflow: hidden;
-                                background: none !important;
-                                width: 100%;
-                                height: 297px;
-                            }
-
-                            .gmap_iframe {
-                                height: 297px !important;
-                            }
-                        </style>
+                                href="https://www.kokagames.com/fnf-friday-night-funkin-mods/"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </footer>
 
-        <div class="xem_them_1">
-            <div class="modal_content">
-                <div style="display: flex;">
-
-                    <div class="img_smartkey_oto" style="flex: 40%;">
-                        <img src="http://thanhhaisuakhoa.com/thumbs/400x400x2/upload/product/xe-toyota-2320.png" alt="">
-                        <div>
-                            <img style="width: 20%;height: 20%;"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
-                                alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
-                            <img style="width: 20%;height: 20%;"
-                                src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
-                                onclick="location.href='https:/zalo.me/0764188269'">
-                        </div>
-                    </div>
-                    <div style="flex: 60%">
-                        <span style="font-family: sans-serif; color: #ee4423; font-size: 20px; padding: 20px 0px;">SMART
-                            KEY Ô TÔ</span>
-                        <div style="color: #ee4d2d"><span><u style="color:#ee4423; margin: 0px 5px;">4.5</u><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star-half"></i></span></div>
-                        <p style="padding: 10px 0px;" class="content-smk">SMART KEY là một trong những chiếc chìa khóa
-                            thông minh thông dụng nhất hiện nay. Không chỉ vì sự tiện lợi trong quá trình sử dụng mà còn
-                            có tính bảo mật vô cùng cao, khiến người tiêu dùng luôn luôn ưu tiên tin tưởng và chọn dùng
-                            sản phẩm này.</p>
-                        <div>
-                            <img src="https://www.cool-mania.vn/data/product/5f/37670c56e74e5153e1b8e668a050cf.gif"
-                                alt="" style="width: 80%;">
-                        </div>
-                        <!-- <div>
-                            <p style="padding: 10px 0px; font-size: 20px; color: #ee4423;">Giá cả: </p>
-                        </div> -->
-                        <button class="btn-contact" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-
+        <modal>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="loader"></div>
                 </div>
-
             </div>
-        </div>
-
-        <div class="xem_them_2">
-            <div class="modal_content_2">
-                <div style="display: flex;">
-
-                    <div class="img_smartkey_oto" style="flex: 40%;">
-                        <img src="http://thanhhaisuakhoa.com/thumbs/400x400x2/upload/product/xe-ford8-2172.jpg" alt="">
-                        <div>
-                            <img style="width: 20%;height: 20%;"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
-                                alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
-                            <img style="width: 20%;height: 20%;"
-                                src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
-                                onclick="location.href='https:/zalo.me/0764188269'">
-                        </div>
-                    </div>
-                    <div style="flex: 60%">
-                        <span style="font-family: sans-serif; color: #ee4423; font-size: 20px; padding: 20px 0px;">CHÌA
-                            KHÓA Ô TÔ</span>
-                        <div style="color: #ee4d2d"><span><u style="color:#ee4423; margin: 0px 5px;">5.0</u><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
-                        <p style="padding: 10px 0px;" class="content-smk">Hiện nay số lượng ô tô ở Việt Nam rất lớn nên
-                            vì vậy nhu cầu các dịch vụ liên quan đến xe hơi cũng không hề nhỏ. Đặc biệt hơn
-                            là chìa khóa. Chìa khóa ô tô rất khó để sao chép hay làm thêm, vì nó đòi hỏi một chất lượng
-                            tốt và độ tỉ mỉ cao, nhưng đừng lo vì dịch vụ Thanh Hải sẽ thực hiện
-                            điều đó mốt cách chuyên nghiệp nhất.</p>
-                        <div>
-                            <img src="https://www.cool-mania.vn/data/product/5f/37670c56e74e5153e1b8e668a050cf.gif"
-                                alt="" style="width: 80%;">
-                        </div>
-                        <!-- <div>
-                            <p style="padding: 10px 0px; font-size: 20px; color: #ee4423;">Giá cả: </p>
-                        </div> -->
-                        <button class="btn-contact" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="xem_them_3">
-            <div class="modal_content_3">
-                <div style="display: flex;">
-
-                    <div class="img_smartkey_oto" style="flex: 40%;">
-                        <img src="https://www.mikes-locks.com/wp-content/uploads/Truck-Key-Pilot-Travel-Center.jpg"
-                            alt="">
-                        <div>
-                            <img style="width: 20%;height: 20%;"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
-                                alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
-                            <img style="width: 20%;height: 20%;"
-                                src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
-                                onclick="location.href='https:/zalo.me/0764188269'">
-                        </div>
-                    </div>
-                    <div style="flex: 60%">
-                        <span style="font-family: sans-serif; color: #ee4423; font-size: 20px; padding: 20px 0px;">CHÌA
-                            KHÓA XE TẢI</span>
-                        <div style="color: #ee4d2d"><span><u style="color:#ee4423; margin: 0px 5px;">4.5</u><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star-half"></i></span></div>
-                        <p style="padding: 10px 0px;" class="content-smk"> Sửa khóa thanh hải nhận làm chìa khóa xe của
-                            các hãng như: KIA, HUYNDAI, ISUZU, SUZZUKI, MITSUBISHI, HINO ,... và rất nhiều hãng xe khác
-                            nữa trên địa bàn thành phố hồ chí minh. Với thợ khóa giỏi kinh nghiệm sẽ làm nhanh chóng
-                            chìa khóa mới cho khách hàng mà không làm hư hỏng ổ khóa cũ. Hãy gọi điện đến số hotline
-                            0977689402 để được tư vấn.</p>
-                        <div>
-                            <img src="https://www.cool-mania.vn/data/product/5f/37670c56e74e5153e1b8e668a050cf.gif"
-                                alt="" style="width: 80%;">
-                        </div>
-                        <!-- <div>
-                            <p style="padding: 10px 0px; font-size: 20px; color: #ee4423;">Giá cả: </p>
-                        </div> -->
-                        <button class="btn-contact" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="xem_them_4">
-            <div class="modal_content">
-                <div style="display: flex;">
-
-                    <div class="img_smartkey_oto" style="flex: 40%;">
-                        <img src="https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/nguyenthanhha/032022/11/08/in_article/vietnams-car-sales-drop-for-second-consecutive-month.jpg?rt=20220311083516"
-                            alt="">
-                        <div>
-                            <img style="width: 20%;height: 20%;"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
-                                alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
-                            <img style="width: 20%;height: 20%;"
-                                src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
-                                onclick="location.href='https:/zalo.me/0764188269'">
-                        </div>
-                    </div>
-                    <div style="flex: 60%">
-                        <span style="font-family: sans-serif; color: #ee4423; font-size: 20px; padding: 20px 0px;">MỞ
-                            KHÓA XE Ô TÔ</span>
-                        <div style="color: #ee4d2d"><span><u style="color:#ee4423; margin: 0px 5px;">4.5</u><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star-half"></i></span></div>
-                        <p style="padding: 10px 0px;" class="content-smk">
-                            Sửa khóa Thanh Hải chuyên làm chìa khóa remote khóa cửa xe ô tô quận 1. Sửa khóa xe ô tô, xe
-                            hơi mất chìa khóa, độ chìa khóa từ chìa thẳng sang fip gập nhỏ gọn, bền và đẹp, làm thêm
-                            chìa khóa dự phòng. Làm chìa khóa cơ, chìa khóa thông minh ( smartkey) zin chính hãng tại
-                            nhà. Chúng tôi còn nhận mở khóa xe ô tô 24/24h tận nơi bằng đồ nghề chuyên dụng cho từng
-                            hãng xe không hư ổ, cong vênh cửa xe. Hãy liên hệ để được tư vấn báo giá: 0977 689 402 (a.
-                            hải)
-                        </p>
-                        <div>
-                            <img src="https://www.cool-mania.vn/data/product/5f/37670c56e74e5153e1b8e668a050cf.gif"
-                                alt="" style="width: 80%;">
-                        </div>
-
-                        <button class="btn-contact" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="xem_them_5">
-            <div class="modal_content">
-                <div style="display: flex;">
-
-                    <div class="img_smartkey_oto" style="flex: 40%;">
-                        <img src="https://static.carmudi.vn/wp-content/uploads/2022-08/VSGPZnXZzg_760_570.jpg" alt="">
-                        <img src="img/43989ce2ede62ab873f7.jpg" alt="">
-                        <div>
-                            <img style="width: 20%;height: 20%;"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
-                                alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
-                            <img style="width: 20%;height: 20%;"
-                                src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
-                                onclick="location.href='https:/zalo.me/0764188269'">
-                        </div>
-                    </div>
-                    <div style="flex: 60%">
-                        <span style="font-family: sans-serif; color: #ee4423; font-size: 20px; padding: 20px 0px;">SMART KEY OTO TOYOTA</span>
-                        <div style="color: #ee4d2d"><span><u style="color:#ee4423; margin: 0px 5px;">4.5</u><i
-                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                    class="fas fa-star"></i><i class="fas fa-star-half"></i></span></div>
-                        <p style="padding: 10px 0px;" class="content-smk" >
-                            Nhận làm chìa khoá tất cả các dòng, đời xe sử dụng khoá thông minh( start stop) xe lắp ráp cũng như xe nhập khẩu chính hãng như Toyota Camry, Toyota corolla altis, Toyota Vios, Toyota Yaris , Toyota Cross... Cài đặt chìa khoá bằng máy chuyên dụng khi làm thêm chìa, mất hết chìa khoá một cách nhanh chóng, không bị lỗi xe. Sử dụng chìa zin chính hãng và phôi chìa khoá theo máy, chìa khoá đc bảo hành 12 tháng. Liên hệ tư vấn: 0764 188 269. Mr : Hải
-                        </p>
-                        <div>
-                            <img src="https://www.cool-mania.vn/data/product/5f/37670c56e74e5153e1b8e668a050cf.gif"
-                                alt="" style="width: 80%;">
-                        </div>
-
-                        <button class="btn-contact" onclick="location.href='tel:0764 188 269'">LIÊN HỆ NGAY</button>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-
-    </div>
-    <!-- <mega class="megamen">
-        <div
-            style="background-color: white; border-radius: 15px; color: black; padding: 15px; box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
-            <span><i class="fas fa-times" id="close-mega"></i></span>
-            <img src="https://i.pinimg.com/originals/c8/a6/2c/c8a62c3f14fdf027de13e1755ddd0ec6.gif" alt=""
-                onclick="location.href='https:www.facebook.com/suakhoathanhhai/'">
-            <span style="display: flex; justify-content: center;">Cần tư vấn ngay ?</span>
-        </div>
-    </mega> -->
-    
-    <button type="button" class="scroll-to-top btn-position btnstyle" onclick="location.href='tel:0764 188 269'"><img style="width: 50px;"
-            src="./img/phone.png"
-            alt=""></button>
-    <zalo class="zalo"><img src="https://savitel.com.vn/wp-content/uploads/2022/05/zalo-icon.png" alt=""
-            onclick="location.href='https:/zalo.me/0764188269'"></zalo>
-    <fb class="fb"><img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/800px-Facebook_f_logo_%282019%29.svg.png"
-            alt="" onclick="location.href='https:www.facebook.com/suakhoathanhhai/'"></fb>
+        </modal>
+    </main>
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-    <script>
-        const nav = document.querySelector("navigation");
-    </script>
-
-    <script>
-        $("#side-bar-button").click(function () {
-            $("#side-bar-button").css("opacity", "0");
-            $(".side-bar").addClass("enter");
-        })
-
-        $(".close").click(function () {
-            $(".side-bar").removeClass("enter");
-            $("#side-bar-button").css("opacity", "1");
-        }) 
-    </script>
-    <script>
-        $("#close-mega").click(function () {
-            $(".megamen").hide();
-        })
-    </script>
-
-    <script>
-
-        function services_1() {
-            // { top: 910, left: 0, behavior: "smooth" }
-            $('html, body').animate({
-                scrollTop: $(".making-smk-oto").offset().top
-            }, 900);
-            $(".side-bar").removeClass("enter");
-            $("#side-bar-button").css("opacity", "1");
-        }
-        function services_2() {
-            $('html, body').animate({
-                scrollTop: $(".making-key-oto").offset().top
-            }, 900);
-            $(".side-bar").removeClass("enter");
-            $("#side-bar-button").css("opacity", "1");
-        }
-        function services_3() {
-            $('html, body').animate({
-                scrollTop: $(".making-key-truck-oto").offset().top
-            }, 900);
-            $(".side-bar").removeClass("enter");
-            $("#side-bar-button").css("opacity", "1");
-        }
-        function services_4() {
-            $('html, body').animate({
-                scrollTop: $(".unlock-car-door").offset().top
-            }, 900);
-            $(".side-bar").removeClass("enter");
-            $("#side-bar-button").css("opacity", "1");
-        }
-        $("#xem_them_smartkey").click(function () {
-            $(".xem_them_1").fadeIn();
-        })
-        $("#xemThemKeyOto").click(function () {
-            $(".xem_them_2").fadeIn();
-        })
-        $("#xemThemCKXT").click(function () {
-            $(".xem_them_3").fadeIn();
-        })
-        $("#mokhoaoto").click(function () {
-            $(".xem_them_4").fadeIn();
-        })
-        $("#xemthem_list_smk_toyota").click(function () {
-            $(".xem_them_5").fadeIn();
-        })
-
-
-        function myFunction() {
-            var x = document.querySelector(".services_menu_item");
-
-            if (x.style.display === "none") {
-                x.style.display = "block";
-
-            } else {
-                x.style.display = "none";
-
-            }
-        }
-    </script>
-
-    <script>
-        var modal = document.querySelector(".xem_them_1");
-        var modal_2 = document.querySelector(".xem_them_2");
-        var modal_3 = document.querySelector(".xem_them_3");
-        var modal_4 = document.querySelector(".xem_them_4");
-        var modal_5 = document.querySelector(".xem_them_5");
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                $(".xem_them_1").fadeOut();
-            }
-            if (event.target == modal_2) {
-                $(".xem_them_2").fadeOut();
-            }
-            if (event.target == modal_3) {
-                $(".xem_them_3").fadeOut();
-            }
-            if (event.target == modal_4) {
-                $(".xem_them_4").fadeOut();
-            }
-            if (event.target == modal_5) {
-                $(".xem_them_5").fadeOut();
-            }
-
-        }
-
-    </script>
-
-    <script>
-        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            }
-            else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }
-        }
-        toggleSwitch.addEventListener('change', switchTheme, false);
-    </script>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/script.js" defer></script>
 </body>
 
 </html>
