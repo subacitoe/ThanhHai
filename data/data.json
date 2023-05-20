@@ -1,0 +1,167 @@
+{
+    "phone":[
+        {
+            "number" : "tel:0764188269"
+        }
+    ]
+    ,
+    "product": [
+        {
+          "name": "SMART KEY OTO TOYOTA",
+          "link": "../product/SMK-OTO-toyota.html",
+          "link_image" : "../img/smk-toyota.png",
+          "cost": "Liên hệ",
+          "content" : "Chìa khóa thông minh"
+        },
+        {
+          "name": "SMART KEY XE KIA",
+          "link": "../product/SMK-OTO-kia.html",
+          "link_image" : "../img/smk-KIA.png",
+          "cost": "Liên hệ",
+          "content" : "Chìa khóa thông minh"
+        },
+        {
+            "name": "SMART KEY XE HUYNDAI",
+            "link": "../product/SMK-OTO-huyndai.html",
+            "link_image" : "../img/smk-huyndai.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        },
+        {
+            "name": "SMART KEY XE FORD",
+            "link": "../product/SMK-OTO-ford.html",
+            "link_image" : "../img/smk-ford.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        },
+        {
+            "name": "SMART KEY MAZDA",
+            "link": "../product/SMK-OTO-mazda.html",
+            "link_image" : "../img/smk-mazda.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        },
+        {
+            "name": "SMART KEY NISSAN",
+            "link": "../product/SMK-OTO-nissan.html",
+            "link_image" : "../img/smk.nissan.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY MITSUBISHI",
+            "link": "../product/SMK-OTO-mitsubishi.html",
+            "link_image" : "../img/smk-mitsubishi.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY SUZUKI",
+            "link": "../product/SMK-OTO-suzuki.html",
+            "link_image" : "../img/smk-suzuki.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY XE ISUZU",
+            "link": "../product/SMK-OTO-isuzu.html",
+            "link_image" : "../img/smk-isuzu.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY XE CHERVOLET",
+            "link": "../product/SMK-OTO-chervolet.html",
+            "link_image" : "../img/smk-chervolet.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY XE BMW",
+            "link": "../product/SMK-OTO-bmw.html",
+            "link_image" : "../img/smk-bmw.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY XE MERCEDES",
+            "link": "../product/SMK-OTO-mercedes.html",
+            "link_image" : "../img/smk-mercedes.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY XE AUDI",
+            "link": "../product/SMK-OTO-audi.html",
+            "link_image" : "../img/smk-audi.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "SMART KEY XE VOLKSWAGEN",
+            "link": "../product/SMK-OTO-volkswagen.html",
+            "link_image" : "../img/smk-volkswagen.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa thông minh"
+        }
+        ,
+        {
+            "name": "CHÌA KHÓA REMOTE KIA",
+            "link": "../product/REMOTE-OTO-kia.html",
+            "link_image" : "../img/oto-key-kia.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa remote"
+        }
+        ,
+        {
+            "name": "CHÌA KHÓA REMOTE MITSUBISHI",
+            "link": "../product/REMOTE-OTO-mitsubishi.html",
+            "link_image" : "../img/oto-key-mitsubishi.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa remote"
+        }
+        ,
+        {
+            "name": "CHÌA KHÓA REMOTE FORD",
+            "link": "../product/REMOTE-OTO-ford.html",
+            "link_image" : "../img/oto-key-ford.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa remote"
+        }
+        ,
+        {
+            "name": "CHÌA KHÓA REMOTE MAZDA",
+            "link": "../product/REMOTE-OTO-mazda.html",
+            "link_image" : "../img/oto-key-mazda.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa remote"
+        }
+        ,
+        {
+            "name": "CHÌA KHÓA REMOTE SUZUKI",
+            "link": "../product/REMOTE-OTO-suzuki.html",
+            "link_image" : "../img/oto-key-suzuki.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa remote"
+        }
+        ,
+        {
+            "name": "CHÌA KHÓA REMOTE ISUZU",
+            "link": "../product/REMOTE-OTO-isuzu.html",
+            "link_image" : "../img/oto-key-isuzu.png",
+            "cost": "Liên hệ",
+            "content" : "Chìa khóa remote"
+        }
+       
+       
+    ]
+    
+}
