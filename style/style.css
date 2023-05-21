@@ -163,7 +163,7 @@ nav {
 /* swiper */
 .swiper {
   width: 100%;
-  height: 30vw;
+  height: 35vw;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
@@ -174,18 +174,15 @@ nav {
   background: #fff;
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  background-position: center !important;
+  background-size: cover !important;
+  object-fit: cover !important;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-
+  max-width: 100%;
+  height: auto;
 }
 
 /* Brand */
@@ -660,7 +657,12 @@ footer {
 }
 
 @media only screen and (max-width: 650px) {
-  
+  .swiper{
+    height: 65vw;
+  }
+  .default_margin{
+    margin: 0px 0px !important;
+  }
   .left-footer{
     display: none;
   }
