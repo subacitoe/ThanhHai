@@ -31,6 +31,9 @@ function navFind()
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Enter") {
             modal.style.display = "block";
+            $('html, body').animate({
+                scrollTop: $(".list-Product-right").offset().top
+            }, 10);
             setTimeout(() => {
                 for (i = 0; i < li.length; i++) {
                     a = li[i].getElementsByTagName("a")[0];
@@ -64,6 +67,10 @@ function myFunction() {
         // If the user presses the "Enter" key on the keyboard
         if (event.key === "Enter") {
             modal.style.display = "block";
+            $('html, body').animate({
+                scrollTop: $(".list-Product-right").offset().top
+            }, 10);
+
             setTimeout(() => {
                 for (i = 0; i < li.length; i++) {
                     a = li[i].getElementsByTagName("a")[0];
@@ -80,7 +87,7 @@ function myFunction() {
                 document.getElementById("myBtn").click();
 
             }, 800)
-
+           
         }
     });
 
