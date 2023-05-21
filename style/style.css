@@ -657,6 +657,9 @@ footer {
 }
 
 @media only screen and (max-width: 650px) {
+  header .default_margin{
+    margin: 0px 50px !important;
+  }
   .swiper{
     height: 65vw;
     border-radius: 0px;
